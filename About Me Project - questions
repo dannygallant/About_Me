@@ -1,0 +1,27 @@
+Questions:
+
+1) <strong> no longer works after styling paragraphs. Tried selecting it a few ways without effect:
+
+strong { font-weight: bold; }
+p strong { font-weight: bold; }
+.introduction-section p strong { font-weight: bold; }
+.introduction-section > p strong { font-weight: bold; }
+
+
+2) using .content-footer here also trims the footer's background color to 38em:
+
+.content-footer,
+.introduction-section,
+.location-section,
+.questions-section {
+    max-width: 38em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+}
+
+3) inline-block is lining up list items, but the result is not centering correctly:
+
+.social > li {
+  display: inline-block;
+}

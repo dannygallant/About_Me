@@ -1,0 +1,171 @@
+body {
+  /* Typography Declarations */
+  
+  color: #222222;
+  font-size: 1em;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.content-footer,
+.masthead-heading,
+.masthead-intro {
+  text-align: center;
+}
+
+.masthead {
+  padding: 6em 0;
+  background-image: url('http://i.imgur.com/6feOGyY.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top: solid 1em #FFCF33;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 5px 3px 7px 5px black;
+}
+
+.masthead-intro {
+  /* Layout Declarations */
+  
+  margin-bottom: 0.1em;
+  /* Typography Declarations */
+  
+  font-family: "Gentium Book Basic", Georgia, serif;
+  font-size: 2em;
+}
+
+.masthead-heading {
+  /* Layout Declarations */
+  
+  margin-top: -0.2em;
+  /* Typography Declarations */
+  
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  font-size: 6em;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 3px #FFCF33;
+}
+/* .content-footer  solution includes the footer here, but it shrinks the background color block to 38em  */
+
+.introduction-section,
+.location-section,
+.questions-section {
+  max-width: 38em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+}
+
+.introduction-section,
+.location-section {
+  border-bottom: solid 0.25em #594F49;
+}
+ 
+
+/* unvisited link */
+a:link {
+    color: #FFCF33;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+/* visited link */
+a:visited {
+    color: #FFCF33;
+}
+
+/* mouse over link */
+a:hover {
+    color: red;
+}
+
+/* selected link */
+a:active {
+    color: yellow;
+}
+
+
+.masthead-intro > p {
+  font-size: 1.25em;
+}
+
+.content-footer {
+  background-color: #594F49;
+  margin-top: 5em;
+  padding: 4em 0;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 5px 3px 7px 5px #594F49;
+}
+
+.content-footer > p {
+  color: #ffffff;
+}
+/* inline-block is lining up list items, but not centering correctly */
+
+/*.social > li {
+  width: 75px;
+  margin: 0 auto;
+  display: inline-block;
+}*/
+
+/* ======================== */
+
+.social{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.social li {
+    display:inline;
+}
+.social a {
+    display:inline-block;
+    padding:10px;
+}
+
+/* ======================== */
+
+.introduction-section > p,
+.location-section > p,
+.content-footer > p {
+  /* Typography Declarations*/
+  
+  font-weight: 300;
+  letter-spacing: 0.05em;
+}
+/*
+strong {
+  font-weight: bold;
+}*/
+
+.questions-section > h2 {
+  font-family: "Gentium Book Basic", Georgia, serif;
+  font-size: 1.2em;
+  font-weight: bold;
+  /* Layout */
+  
+  margin: 2em 0 1em 0;
+  color: #FFCF33;
+}
+
+section > h1 {
+  margin-top: 2em;
+}
+
+/* ============ Media Queries for Resonsiveness ============== */
+
+@media only screen and (max-width: 500px) {
+    .masthead {
+        padding: 3em 0;
+    }
+    .masthead-heading {
+        font-size: 3em;
+    }
+
+    .content-footer{
+        padding: 2em 0;
+    }
+}
+
+/* May need to add another query between 500-820px */
